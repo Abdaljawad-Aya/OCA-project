@@ -1,0 +1,517 @@
+<!-- HTML FIRST PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>Home</title>
+
+</head>
+
+<body>
+ 
+
+  <header>
+    
+    
+    <div class="Links">&ensp;
+      
+      <a href="index.html" class="two btn btn-success col-sm-10" role="button">Home </a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Accomplishment.html" class="three btn btn-success col-sm-20" role="button">Accomplishment</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Contacts.html"class="four btn btn-success col-sm-10" role="button">Contact</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Aboutme.html" class="one btn btn-success col-sm-10" role="button">About </a>
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+    </div>
+    
+  </div>
+  
+</header>
+<div class="bg-text">
+  <h1>I'm Ayah Imad</h1>
+  <p>Hello World</p>
+</div>
+<div class="bg-image1"></div>
+<!-- <audio src="/Queen - We Will Rock You (Official Video).mp3" controls>
+  <embed name="GoodEnough" src="/music/good_enough.mp3" loop="true" hidden="true" autostart="true">
+  </audio> -->
+  
+  
+  
+</body>
+</html>
+
+<!-- HTML SECOND PAGE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Accomplishment</title>
+</head>
+<body>
+      <header>
+ 
+    
+     <div class="Links2">&ensp;
+      <a href="index.html" class="two btn btn-success col-sm-10" role="button">Home</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      
+      <a href="Accomplishment.html" class="three btn btn-success col-sm-20" role="button">Accomplishment</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Contacts.html"class="four btn btn-success col-sm-10" role="button">Contact</a>&ensp;&ensp; 
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+       <a href="Aboutme.html" class="one btn btn-success col-sm-10" role="button">About </a>
+       <!-- <button type="button" class="btn btn-info">Button</button> -->
+      </div>
+    </div>
+  </header>
+    <div class="bg-gif">
+      <div class="Accomplishment">
+        <h1>Some of my Accomplishment</h1>
+        
+      </div>
+    
+      <div class="card-group" style="width: 100%;">
+        <div class="card border-success" style="height:5rem;">
+          <img class="card-img-top" src="img3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card border-success"style="height:0.5px;" >
+          <img class="card-img-top" src="img2.png"alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card border-success" style="height:5rem;">
+          <img class="card-img-top" src="img5.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <img class="card-img-top" src="img6.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card border-success" style="height:5rem;">
+          <img class="card-img-top" src="img7.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card border-success" style="height:5rem;" >
+          <img class="card-img-top" src="img8.png" alt="Card image cap ">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Many more to comes</p>
+       
+      </footer>
+</body>
+</html>
+
+<!-- HTML THIRD PAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style2.css">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    
+    
+    <div class="Links3">&ensp;
+      
+      <a href="index.html" class="two btn btn-success col-sm-10" role="button">Home </a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Accomplishment.html" class="three btn btn-success col-sm-20" role="button">Accomplishment</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Contacts.html"class="four btn btn-success col-sm-10" role="button">Contact</a>&ensp;&ensp;
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+      <a href="Aboutme.html" class="one btn btn-success col-sm-10" role="button">About </a>
+      <!-- <button type="button" class="btn btn-info">Button</button> -->
+    </div>
+    
+  </div>
+  
+</header>
+  <div class="bg-image"></div>
+  
+<a href="" class="list-group-item" style="text-decoration: none; width: 60rem;">
+<div class="media">
+  
+<div class="media-body">
+  <div class="media-content">
+    <h4 class="media-heading">Ayah Imad <small>Trainee at Orange Coding Academy at Orange Jordan | web & mobile developer | Graphic Designer</small></h4> </div>
+      <i class="fa fa-map-marker"></i> 
+      Shmeisani ,Amman , Jordan
+      <ul class="list-unstyled">
+            <li><i class="fa fa-linkedin"></i> Ayah Imad</li>
+            <li><i class="fa fwa-mobile"></i> 00962770264584</li>
+            <li><i class="fa fa-envelope-o"></i> abdaljawad.ayah94@gmail.com</li>
+            <li><i class="fa fa-github"></i> Abdaljawad-Ayah</li>
+        </ul>
+    </div>
+</div>
+
+</a>
+</body>
+</html>
+
+<!-- HTML FOURTH PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style3.css">
+  <title>About</title>
+</head>
+<body>
+  <div class="bg-image">
+
+  </div>
+
+  <div class="Links">&ensp;
+    <a href="index.html" class="two btn btn-success col-sm-10" role="button">Home</a>&ensp;&ensp;
+    <!-- <button type="button" class="btn btn-info">Button</button> -->
+    <a href="Accomplishment.html" class="three btn btn-success col-sm-20" role="button">Accomplishment</a>&ensp;&ensp;
+    <!-- <button type="button" class="btn btn-info">Button</button> -->
+    <a href="Contacts.html"class="four btn btn-success col-sm-10" role="button">Contact</a>&ensp;&ensp; 
+    <!-- <button type="button" class="btn btn-info">Button</button> -->
+     <a href="Aboutme.html" class="one btn btn-success col-sm-10" role="button">About </a>
+     <!-- <button type="button" class="btn btn-info">Button</button> -->
+    </div>
+ 
+    <div class="Aboutme">
+      <h1>Hello!</h1>
+      <p>
+       Studied Graphic Design in Al-Quds College 1 year
+      </p>
+      <p>
+        Worked for 3 years as photographer and Graphic Designer
+       </p>
+       <p>
+       I have experience in Boxing , Bodybuilding , Bodyweight
+       </p>
+       <p>
+       I volunteered in Tkiyet Um Ali in feeding 400 people.
+       Also, volunteered in Charity clothing bank
+        </p>
+        <p>
+          Currently studying to be a programmer 
+           </p>
+    </div>
+</body>
+</html>
+
+
+/* CSS FIRST PAGE */
+ body,
+ html {
+
+   height: 95.5%;
+   margin-top: -0.0%;
+   background-image: url("200.gif");
+
+ }
+
+ * {
+   box-sizing: border-box;
+   padding: 0;
+   justify-content: center;
+
+ }
+
+ /* 
+ audio {
+   display: none;
+ } */
+
+ .bg-image1 {
+   /* The image used */
+   background-image: url("/jefferson-santos-9SoCnyQmkzI-unsplash.jpg");
+   /* Add the blur effect */
+   filter: blur(10px);
+   -webkit-filter: blur(1px);
+   height: 100%;
+
+   /* 
+   border-style: solid;
+   border-color: red; */
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: grid;
+
+
+ }
+
+
+
+
+
+ /* Position text in the middle of the page/image */
+ .bg-text {
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/opacity/see-through */
+   color: white;
+   font-weight: bold;
+   font-family: Impact, 'Arial Narrow', sans-serif;
+   position: absolute;
+   top: 66%;
+   left: 80%;
+   transform: translate(-100%, -100%);
+   z-index: 2;
+   width: 60%;
+   padding: 20px;
+   text-align: center;
+
+ }
+
+
+
+ header {
+
+   height: 8.2vh;
+   text-align: center;
+
+
+ }
+
+ .Links {
+   padding: 0.7%;
+
+   margin-left: -8%;
+ }
+
+
+ .Links {
+   display: grid;
+   /* grid-template-columns: 10px 198px; */
+   grid-template-columns: repeat(8, 150px);
+   /* grid-template-columns: 1fr 1fr 1fr; */
+ }
+ 
+ /* CSS SECOND PAGE */ 
+ 
+ html,
+ body {
+
+
+   margin-top: -0%;
+   background-image: url("/giphy.gif");
+
+ }
+
+ * {
+   box-sizing: border-box;
+
+
+ }
+
+
+
+
+ header {
+
+
+   height: 8.2vh;
+   text-align: center;
+   background-image: url("200.gif");
+
+ }
+
+ .bg-gif {
+   /* The image used */
+
+   /* Add the blur effect */
+   /* filter: blur(5px);
+   -webkit-filter: blur(2px); */
+   height: 100%;
+
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: grid;
+ }
+
+ h1 {
+   color: white;
+   padding-top: 2.5%;
+   text-align: center;
+
+ }
+
+ .card {
+   margin: 3%;
+
+ }
+
+
+ .Links2 {
+   padding: 0.7%;
+   margin-left: 95.6px;
+
+
+ }
+
+
+ .Links2 {
+   display: grid;
+   /* grid-template-columns: 10px 198px; */
+   grid-template-columns: repeat(8, 150px);
+   /* grid-template-columns: 1fr 1fr 1fr; */
+ }
+
+ footer {
+   color: white;
+   margin: 3%;
+   font-size: 30px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+ }
+ /* CSS THIRD PAGE */
+ 
+ 
+ body,
+html {
+
+  height: 95.5%;
+  margin-top: -0.0%;
+  background-image: url("contact-background.jpeg");
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+.Links3 {
+  padding: 0.7%;
+  margin-left: 95.6px;
+}
+
+
+.Links3 {
+  display: grid;
+  /* grid-template-columns: 10px 198px; */
+  grid-template-columns: repeat(8, 150px);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.list-group-item {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* CSS FOURTH PAGE */
+
+
+body,
+html {
+
+  height: 95.5%;
+  margin-top: -0.0%;
+  background-image: url("java.png");
+
+}
+
+
+* {
+  box-sizing: border-box;
+
+
+}
+
+.Links {
+  padding: 0.7%;
+  margin-left: 95.6px;
+
+}
+
+
+.Links {
+  display: grid;
+  /* grid-template-columns: 10px 198px; */
+  grid-template-columns: repeat(8, 150px);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+h1 {
+  color: white;
+  margin: 3%;
+
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  display: grid;
+  color: blue;
+  font-family: cursive;
+  font-size: 30px;
+  border-width: 1px;
+
+
+}

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(Images/background.png) fixed;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+
+.container {
+  font-family: "Righteous", cursive;
+}
+#mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: #f6f5f5;
+  transition: background 0.4s;
+  z-index: 3;
+}
+.user_Data {
+  padding: 1rem;
+  border-right: 1px #333 solid;
+  margin: 0.5rem 0.5rem;
+}
+#mainNav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1vmax;
+}
+.logout {
+  background-color: #ee6f57;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#mainNav ul li a {
+  text-decoration: none;
+  color: #070d59;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 0.5rem;
+}
+
+#mainNav ul li a:hover:not(.logout) {
+  background: #1f3c88;
+  color: #eee;
+  border-radius: 10px;
+}
+.bg-black {
+  background: #070d59 !important;
+}
+.text-white ul li a {
+  color: #f6f5f5 !important;
+}
+.text-white {
+  color: #f6f5f5 !important;
+}
+section:nth-of-type(1) {
+  margin-top: 84px;
+}
+section {
+  position: relative;
+  /* z-index: -1; */
+  height: 100vh;
+  padding: 16px;
+  font-size: 20px;
+  color: #f6f5f5;
+  text-align: center;
+}
+section h2 {
+  margin-top: 5rem;
+}
+.show {
+  opacity: 0;
+}
+.card_1 {
+  opacity: 0;
+}
+section:nth-of-type(even) {
+  background: #f6f5f5;
+  color: #070d59;
+  overflow-x: scroll;
+}
+
+footer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #070d59;
+  color: #f6f5f5;
+}
+
+.Logo p {
+  background: #070d59;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 80%;
+}
+.Logo {
+  margin-top: 10rem;
+}
+
+#About1 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#About1 h2 {
+  grid-column: 1 / span 3;
+}
+.border_img {
+  background-color: #070d59;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px #070d59 dotted;
+}
+.card_1 {
+  display: flex;
+  flex-direction: column;
+}
+.card_1:nth-of-type(2) {
+  border-left: 1px #070d59 solid;
+  border-right: 1px #070d59 solid;
+}
+
+.border_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid #070d59;
+  border-radius: 20px;
+  overflow: scroll;
+  height: 50vh;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.header_Item {
+  margin: 5rem 5rem;
+  border-bottom: 2px solid #070d59;
+}
+
+.Item_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+  /* background:#eee; */
+  padding: 2rem;
+  transition: background 0.5s;
+}
+.Item_card:hover {
+  background-color: gray;
+}
+.Item_card button {
+  width: 5rem;
+  height: 3rem;
+  margin-top: 1.2rem;
+  border-radius: 20px;
+  font-family: "Righteous", cursive;
+}
+.Item_card button:hover {
+  background-color: #1f3c88;
+  color: white;
+  cursor: pointer;
+}
+
+.Item_Image {
+  background-color: #070d59;
+  height: 6rem;
+  width: 6rem;
+  overflow: hidden;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+#myInput {
+  border: none;
+  border-radius: 0;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+#myUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#myUL li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+#myUL li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+} */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+@media screen and (max-width: 690px) {
+  .user_Data {
+    transition: font-size 1s;
+    font-size: 1.1vmax;
+    margin-left: 0;
+  }
+  .border_menu {
+    grid-template-columns: 1fr;
+  }
+  .Items_1 {
+    border: none;
+  }
+}

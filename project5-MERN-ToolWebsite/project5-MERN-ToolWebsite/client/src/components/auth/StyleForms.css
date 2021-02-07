@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.m_container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.forms-m_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.m_signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.m_sign-in-form {
+  z-index: 2;
+}
+
+.m_title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.m_input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.m_input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+.invalid-feedback {
+  width: 16rem !important;
+}
+
+.m_input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+.m_textarea {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 23rem;
+  border-radius: 1rem;
+  height: 7rem;
+  padding: 1rem 0 0 1rem;
+  background-color: #f0f0f0;
+  color: #acacac;
+}
+.mooooo textarea::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.m_input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.m_social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.m_social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+}
+
+.m_btn {
+  width: 150px;
+  background-color: #faa9ad;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.m_btn_custom {
+  border: 1px white solid;
+  width: 150px;
+
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  transition: 0.2s;
+}
+.m_btn_custom:hover {
+  color: #f3969a;
+  text-decoration: none;
+  background-color: white;
+}
+
+.m_btn:hover {
+  background-color: #f3969a;
+}
+.panels-m_container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.m_container:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  /* background-color: #ffdf9d; */
+  background-image: url(https://images.unsplash.com/photo-1486428128344-5413e434ad35?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.m_image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 2s;
+}
+.error-notice {
+  border: 1px brown solid;
+  background-color: rgb(255, 195, 195);
+  color: darkred;
+  padding: 0 0.2rem 0 0.5rem;
+  border-radius: 0.4rem;
+}
+.m_m_btn_x {
+  border: none;
+  color: darkred;
+  width: 1rem;
+  height: 100%;
+  background: none;
+  border: 1px brown solid;
+}
+.m_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-m_panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-m_panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.m_panel .m_content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+.form-text {
+  width: 16rem !important;
+  margin-bottom: -90%;
+}
+
+.m_panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.m_panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.m_btn.m_transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.right-m_panel .m_image,
+.right-m_panel .m_content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.m_container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.m_container.sign-up-mode .left-m_panel .m_image,
+.m_container.sign-up-mode .left-m_panel .m_content {
+  transform: translateX(-800px);
+}
+
+.m_container.sign-up-mode .m_signin-signup {
+  left: 25%;
+}
+
+.m_container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.m_container.sign-up-mode form.m_sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.m_container.sign-up-mode .right-m_panel .m_image,
+.m_container.sign-up-mode .right-m_panel .m_content {
+  transform: translateX(0%);
+}
+
+.m_container.sign-up-mode .left-m_panel {
+  pointer-events: none;
+}
+
+.m_container.sign-up-mode .right-m_panel {
+  pointer-events: all;
+}
+
+@media (max-width: 870px) {
+  .m_container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .m_signin-signup {
+    width: 100%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .m_signin-signup,
+  .m_container.sign-up-mode .m_signin-signup {
+    left: 50%;
+  }
+
+  .panels-m_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .m_panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .right-m_panel {
+    grid-row: 3 / 4;
+  }
+
+  .left-m_panel {
+    grid-row: 1 / 2;
+  }
+
+  .m_image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 2.6s !important;
+  }
+
+  .m_panel .m_content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .m_panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .m_panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .m_btn.m_transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .m_container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .m_container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .m_container.sign-up-mode .left-m_panel .m_image,
+  .m_container.sign-up-mode .left-m_panel .m_content {
+    transform: translateY(-300px);
+  }
+
+  .m_container.sign-up-mode .right-m_panel .m_image,
+  .m_container.sign-up-mode .right-m_panel .m_content {
+    transform: translateY(0px);
+  }
+
+  .right-m_panel .m_image,
+  .right-m_panel .m_content {
+    transform: translateY(300px);
+  }
+
+  .m_container.sign-up-mode .m_signin-signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 0 1.5rem;
+  }
+
+  .m_image {
+    display: none;
+  }
+  .m_panel .m_content {
+    padding: 0.5rem 1rem;
+  }
+  .m_container {
+    padding: 1.5rem;
+  }
+
+  .m_container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .m_container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}

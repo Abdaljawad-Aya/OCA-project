@@ -1,0 +1,96 @@
+/* --------------------------------------------------------------------- */
+.down_button{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 4vw;
+  height: 4vw;
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  margin: auto 20px 20px auto !important;
+  background-color: rgba(189, 170, 155, 0.9);
+  border-radius: 50%;
+  border: none;
+  outline: none !important;
+  display: block;
+}
+.intro_title {
+  /* font-weight: 700; */
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.videos_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+.videos_container{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+iframe {
+  width: 25vw;
+  height: 30vh;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    width: 80vw;
+    height: 20vh;
+  }
+  .down_button{
+    display: none;
+  }
+  .videos_container{
+    margin-top: 14rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  iframe {
+    width: 35vw;
+    height: 20vh;
+  }
+  .down_button{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+  iframe {
+    width: 25vw;
+    height: 30vh;
+    margin: 1rem;
+  }
+  .down_button{
+    display: block;
+  }
+}

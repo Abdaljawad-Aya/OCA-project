@@ -1,0 +1,89 @@
+.m_card_container {
+  width: 30rem;
+  height: 40rem;
+  /* border: 1px solid rgb(190, 190, 190); */
+  border-radius: 0.6rem;
+  margin: 1rem;
+  box-shadow: 1px 10px 10px 1px #dadada;
+}
+.m_card_image {
+  width: 100%;
+  overflow: hidden;
+  height: 22rem;
+  /* object-fit: contain; */
+  /* border: 1px solid rgb(190, 190, 190); */
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.m_card_image img {
+  object-fit: cover;
+}
+
+.m_card_Description {
+  width: 100%;
+  height: 14rem;
+}
+.m_card_title_body {
+  font-size: 1.5em;
+  text-align: center;
+  height: 2.5rem;
+  padding: 0.2rem 0;
+}
+.m_card_body_description {
+  text-align: center;
+  height: 8rem;
+}
+.m_card_quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  outline: none;
+}
+
+.m_card_quantity button {
+  outline: none;
+}
+.m_card_body_quantity {
+  height: 2rem;
+}
+.m_card_quantity_btns {
+  height: 2.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  outline: none;
+}
+
+.m_card_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  outline: none;
+}
+.m_card_btn_buy {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.m_card_btn_quntity {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.m_cards_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

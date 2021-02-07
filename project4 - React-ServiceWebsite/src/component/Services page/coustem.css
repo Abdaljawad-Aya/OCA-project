@@ -1,0 +1,68 @@
+.customization {
+    /* margin-top: 10rem; */
+    width: 53vw;
+    margin: auto;
+    /* margin-left: 21vw; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.coustem-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    font-size: 1.25rem;
+
+}
+
+.coustem-form select {
+    width: 25vw;
+    height: 5vh;
+    font-size: .85rem;
+    box-shadow: 0px 1px 10px 1px #C7B7AA;
+
+
+
+
+}
+
+/* .coustem-txt {
+    text-align: center;
+    margin-bottom: 2rem;
+} */
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .customization {
+        width: 70vw;
+    }
+
+    .coustem-form {
+
+        font-size: .75rem;
+
+
+    }
+
+    .coustem-form select {
+        width: 40vw;
+        height: 4vh;
+        font-size: .5rem;
+
+    }
+
+
+
+
+
+
+}

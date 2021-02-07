@@ -1,0 +1,80 @@
+.YouAPI {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  height: auto;
+  /* padding: 1rem; */
+}
+.YouTubeFullDiv {
+  /* background-color: rgb(0, 0, 0); */
+}
+.m_youtubeapi_count {
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.VideoFrame {
+  height: 20rem;
+  width: 30rem;
+  border: 1px solid white;
+}
+.m_youtubeapi_content {
+  text-align: center;
+  height: 20rem;
+  width: 30rem;
+  border: 1px solid white;
+}
+
+@media (max-width: 1026px) {
+  .m_youtubeapi_count {
+    width: auto;
+  }
+  .VideoFrame {
+    height: 20rem;
+    width: 25rem;
+    border: 1px solid white;
+    margin: 1rem;
+  }
+  .m_youtubeapi_content {
+    height: 20rem;
+    width: 25rem;
+    border: 1px solid white;
+    margin: 1rem;
+  }
+}
+@media (max-width: 770px) {
+  .m_youtubeapi_count {
+    width: 80%;
+  }
+  .VideoFrame {
+    height: 25rem;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .m_youtubeapi_content {
+    height: 25rem;
+    width: 100%;
+    border: 1px solid white;
+  }
+}
+@media (max-width: 600px) {
+  .m_youtubeapi_count {
+    width: 90%;
+  }
+  .VideoFrame {
+    height: 15rem;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .m_youtubeapi_content {
+    height: 15rem;
+    width: 100%;
+    border: 1px solid white;
+  }
+}

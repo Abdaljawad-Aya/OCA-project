@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Redressed&display=swap");
+
+body {
+  font-family: "Redressed", cursive, "Josefin Sans", sans-serif;
+
+  /* font-family: 'Emilys Candy', cursive; */
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* .aya_Container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
+.Acolumn {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 30px;
+}
+
+.ACont {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  width: 70%;
+  height: 50%;
+}
+
+.Aya-title {
+  font-size: 1.4rem;
+}
+
+.Acard {
+  box-shadow: 0 4px 8px 0 #dadada;
+  margin: 8px;
+  /* height: 30rem;
+  width: 10rem; */
+  background-color: rgb(255, 255, 255);
+  border: 12px #fcd971;
+  border-radius: 20px;
+}
+.A_img {
+  border-radius: 20px;
+}
+
+.Acontainer {
+  padding: 0 16px;
+  text-align: center;
+  /* height: 15rem;
+  width: 10rem; */
+}
+
+.Acontainer::after,
+.Arow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Atitle {
+  color: rgb(0, 0, 0);
+}
+p {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 650px) {
+  .Acolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1366px) {
+  .Acolumn {
+    width: 45%;
+    margin-bottom: 16px;
+    padding: 0 30px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 70%;
+    height: 50%;
+  }
+}

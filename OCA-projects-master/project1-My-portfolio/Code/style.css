@@ -1,0 +1,638 @@
+/* All pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #07031a;
+  color: #ffcb74;
+  font-family: "Indie Flower", cursive;
+}
+
+/* Header For All pages */
+header aside {
+  display: flex;
+  position: fixed;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 6em;
+  height: 8em;
+  font-family: "Galindo", cursive;
+  background-color: #ffcb74;
+  transform: translateY(-5.7em);
+  animation: bar 1s;
+  width: 100%;
+}
+
+header aside a {
+  text-decoration-line: none;
+  color: #07031a;
+}
+
+header aside a:hover {
+  text-decoration-line: none;
+  border-bottom: 3px solid white;
+}
+
+@keyframes bar {
+  from {
+    transform: translateY(-13em);
+  }
+
+  to {
+    transform: translateY(-5.7em);
+  }
+}
+
+/* Home Body */
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+  margin: 25vh 0 0 25vh;
+  position: absolute;
+  /* border: 2px solid white; */
+}
+
+.logo {
+  color: white;
+  font-size: 3.5em;
+  font-family: "Galindo", cursive;
+  /* border:2px solid white */
+}
+.logo:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+.menu {
+  text-align: center;
+}
+.menu a p {
+  margin-left: 1em;
+  font-size: 4em;
+  text-align: center;
+  /* border: 2px solid white; */
+  color: white;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.menu a p:hover {
+  /* color: #07031a; */
+  /* border-left: 4px solid #ffcb74; */
+  /* padding: 0.5em; */
+  border-radius: 20px;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 80%;
+}
+.Bio {
+  color: ffcb74;
+  width: 15em;
+  margin: 4em;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.2em;
+}
+.Bio:hover {
+  transform: scale(1.4) rotate(4deg);
+}
+
+/* Footer for All Pages */
+.textfooter {
+  color: black;
+  position: fixed;
+  background: #ffcb74;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Contact Page */
+#info-cont {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3em;
+}
+
+#info-cont a {
+  color: white;
+}
+
+#info-cont h3 {
+  color: #07031a;
+}
+
+h3 {
+  background-color: #ffcb74;
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo logo logo"
+    "content sidebar sidebar"
+    "Address Address Address";
+  grid-gap: 4rem;
+  font-size: 1.4em;
+  text-align: center;
+  justify-content: center;
+}
+
+.container p {
+  border-bottom: 1px white dotted;
+}
+
+.content {
+  grid-area: content;
+}
+.content:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.sidebar:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+
+.Address {
+  grid-area: Address;
+}
+.Address:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+.logo-c {
+  margin-top: 10vh;
+  margin-bottom: 2em;
+  grid-area: logo;
+  justify-self: center;
+  font-size: 1.5em;
+  color: white;
+}
+.logo-c:hover {
+  transform: scale(1.2) rotate(6deg);
+}
+.content,
+.sidebar,
+.Address {
+  border: #333 1.5px solid;
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-areas:
+      "logo "
+      "content content "
+      "Address Address ";
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-areas:
+      "logo "
+      "content"
+      "sidebar"
+      "Address";
+  }
+}
+
+/* Work Page */
+
+/*
+I Know that isn't best practice
+I tried a lot of way but this way
+worked with me so I hope to give me feedback
+and how i can improve this code to be best practice and responsive  
+
+Best regards.
+
+*/
+.container-w {
+  display: grid;
+  grid-template-areas:
+    "cardd-1 cardd-2 cardd-3 cardd-4"
+    "cardd-5 cardd-5 cardd-5 cardd-5";
+  grid-gap: 0.25rem;
+  font-size: 1.4em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.card-w {
+  grid-area: cardd-1;
+  text-align: center;
+}
+
+.card-w div,
+.card-w2 div,
+.card-w3 div,
+.card-w4 div,
+.card-w5 div {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5em 1em 5em 1em;
+  z-index: -1;
+  transition: all 0.35s ease-in-out;
+}
+.card-w div:hover:nth-child(odd),
+.card-w2 div:hover:nth-child(even),
+.card-w3 div:hover:nth-child(odd),
+.card-w4 div:hover:nth-child(even),
+.card-w5 div:hover:nth-child(odd) {
+  transform: rotate(5deg) scale(1.06);
+}
+.card-w div:hover:nth-child(even),
+.card-w2 div:hover:nth-child(odd),
+.card-w3 div:hover:nth-child(even),
+.card-w4 div:hover:nth-child(odd),
+.card-w5 div:hover:nth-child(even) {
+  transform: rotate(-5deg) scale(1.06);
+}
+.card-w div button,
+.card-w2 div button,
+.card-w3 div button,
+.card-w4 div button,
+.card-w5 div button {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  width: 90%;
+  font-size: 1.3em;
+  cursor: pointer;
+  background: #ffcb74;
+  color: 07031a;
+  font-family: "Indie Flower", cursive;
+}
+
+section div img {
+  width: 300px;
+  height: 420px;
+  margin: 1rem 1rem;
+  opacity: 80%;
+  border: 2px #ffcb74 solid;
+  border-radius: 20px;
+}
+
+.card-w2 {
+  grid-area: cardd-2;
+  text-align: center;
+}
+.card-w3 {
+  grid-area: cardd-3;
+  text-align: center;
+}
+.card-w4 {
+  grid-area: cardd-4;
+  text-align: center;
+}
+
+.card-w5 {
+  grid-area: cardd-5;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container-w {
+    grid-template-areas:
+      "cardd-1 cardd-1"
+      "cardd-2 cardd-2"
+      "cardd-3 cardd-3"
+      "cardd-4 cardd-4"
+      "cardd-5 cardd-5";
+  }
+}
+
+@media (max-width: 1300px) {
+  .container-w {
+    grid-template-areas:
+      "cardd-1 cardd-2"
+      "cardd-3 cardd-4"
+      "cardd-5 cardd-5";
+  }
+}
+
+#header-w {
+  text-align: center;
+  transform: translateY(10vh);
+  font-size: 5em;
+  color: white;
+}
+
+/* this is part of my endeavors :) */
+
+/* .skillsbar {
+  transform: translateY(10em);
+  
+} */
+
+/* .Bio {
+  color: white; 
+  width: 15em;
+  margin: 4em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.2em;
+
+}
+
+.logo-Bio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+  font-size: 3em;
+  font-family: 'Galindo', cursive;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20em;
+  text-align: center;
+}
+
+.menu a {
+
+  font-family: 'Indie Flower', cursive;
+  text-decoration-line: none;
+  color: white;
+  font-size: 3em;
+}
+
+
+
+
+
+.backfooter {
+
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  bottom: 0;
+  background-color: gray;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textfooter {
+  color: white;
+  bottom: 0;
+  position: fixed;
+  margin-left: 45%;
+  padding: 1vh;
+
+}
+
+#info-cont {
+
+  margin-left: 30em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.1em;
+}
+
+#info-cont a {
+
+  color: white
+}
+
+#info-cont h3 {
+  color: #07031A;
+}
+
+#info-cont h3 {
+  background-color: #ffcb74;
+}
+
+
+.menu a:hover:nth-child(odd) {
+  background: #4f8a8b;
+  border-left: 4px solid #ffcb74;
+  transform: translateX(-0.5em);
+  opacity: 80%;
+}
+
+.menu a:hover:nth-child(even) {
+  padding: 0.2em;
+  /* background: #4f8a8b
+  border-right: 4px solid #ffcb74;
+  transform: translateX(0.5em);
+  opacity: 80%;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 20.5%;
+  max-height: 100%;
+  margin: 0;
+  background: #07031a;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-80px);
+  transform-origin: right top;
+  border-radius: 20px;
+}
+
+.horizontal-scroll-wrapper>div {
+  display: flex;
+  padding: 0em;
+  background: white;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares {
+  padding: 4em 0 0 0;
+  margin: 11% 0 0 10%;
+
+}
+
+.squares>div {
+  width: 40vh;
+  height: 40vh;
+  opacity: 70%;
+  overflow: hidden;
+  animation: scorl 2s;
+}
+
+@keyframes scorl {
+  from {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  to {
+    width: 40vh;
+    height: 40vh;
+  }
+}
+
+.squares>div:hover {
+  width: 41vh;
+  height: 41vh;
+  box-shadow: black 3px 4px 60px;
+  opacity: 100%;
+
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+
+}
+
+.container:hover .overlay {
+  opacity: 60%;
+}
+
+.text {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-w img {
+  transform: translateX(-10em);
+} */
+
+/* * {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#TV-Static {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.container-1 {
+  display: flex;
+  width: 120vh;
+  transform: translateX(50vh) translateY(30vh);
+}
+
+.menu-1 {
+  display: grid;
+  padding-left: 30vh;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+
+.menu-1 a img:hover {
+  padding: 10px;
+  background: #222831;
+  border-left: 4px solid rosybrown;
+  border-right: 4px solid rosybrown;
+}
+
+.item-0 {
+  width: 30%;
+  margin-right: 20vh;
+}
+
+.Bio-1 {
+  color: brown;
+  width: 30vh;
+  margin-top: 9vh;
+}
+
+
+#info-cont {
+  color: white;
+  margin-left: 40vh;
+}
+
+.backfooter {
+
+  position: fixed;
+  width: 100%;
+  padding: 2vh;
+  bottom: 0;
+  background-color: gray;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textfooter {
+  color: white;
+  bottom: 0;
+  position: fixed;
+  margin-left: 40%;
+  padding: 1vh;
+
+}
+
+.menu-1 a img:visited {
+  border: 16px solid #ff33ff;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */

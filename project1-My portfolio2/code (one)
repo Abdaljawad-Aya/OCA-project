@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  
+  <title>Ayah Imad</title>
+
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  
+ 
+}
+.nav-wrapper{
+ 
+  height: 15vh;
+  
+}
+body{
+  
+  font-family: sans-serif ;
+  background-image: url("/img/3.gif");
+  /* background: #282828; */
+  /* background: linear-gradient(45deg, bblue, black ); */
+  background-size:400%  400%;
+  animation: Gradient 15s ease infinite;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 30px 45px 20px;
+  font-family: cursive;
+  font-size: 35px;
+  columns: #111111;
+ 
+}
+
+h2{
+  width: 96%;
+  font-family: 'Times New Roman', Times, serif ;
+  font-weight: 100;
+  background: black;
+  background: linear-gradient(45deg, black , blue ,  blue, black);
+  background-size:400%  400%;
+  animation: Gradient 15s ease infinite;
+  margin-bottom: 15%;
+}
+
+
+.feel{
+  
+  color: white;
+  text-align: center;
+  font-size: 35px; 
+  font-family: cursive;
+  font-weight: bold;
+
+}
+/* .box{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.box span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #fff ;
+  border-right: 2px solid #fff ;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.box span:nth-child(1)
+{
+  animation-delay: -0.6s;
+  transform: rotate(45deg);
+}
+
+.box span:nth-child(2)
+{
+  animation-delay: -0.4s;
+}
+.box span:nth-child(3)
+{
+  animation-delay: -0.2s;
+}
+
+
+@keyframes animate
+
+{
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+
+  }
+  50%{
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+
+  }
+} */
+
+
+
+
+@keyframes Gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.img-info{
+  width: 100%;
+}
+  
+.img-info h1{
+  text-align: center;
+  padding: 30px 30px 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  columns: #111111;
+  line-height: 40px;
+}
+a:hover{
+  color: blue;
+  cursor: none;
+}
+.img-info h2{
+  color: white;
+  padding: 30px 30px 30px;
+  font-family: Monaco;
+  font-size: 50px;
+  columns: #111111;
+  line-height: 40px;
+}
+
+
+
+.img-info p{
+  color: white;
+  padding: 0px 30px 20px;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 16px;
+  columns: #111111;
+  line-height: 24px;
+}
+
+.img-me{
+  width: 100%  
+}
+
+
+@media only screen and (min-width: 768px){
+ 
+
+  .wrapper{
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  .img-info h2{
+    padding: 20px 0px 0px;
+  }
+  
+  .img-info p{
+    padding: 20px 0px 0px;
+  }
+
+  
+.img-me{
+  padding-top: 50px;
+}
+
+}
+
+@media only screen and (min-width: 1000px){
+
+  .wrapper{
+    width: 1000px;
+   
+  }
+
+  .img-info{
+    width: 100%;
+    float: right;
+  }
+
+  .img-info h2{
+    padding: 35px 0px 30px 50px;
+  }
+  
+  .img-info p{
+    padding: 20px 0px 15px 50px;
+  }
+
+  .img-me{
+    padding: 0px 0px 0px 50px;
+    width: 50%;
+    float: left;
+  }
+
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+  <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+
+  <div class="wrapper">
+    
+    <article class="img-info">
+      
+      <h1>
+        <nav>
+        <a href="project.html">Home</a> 
+        <a href="archive.html">Archive</a> 
+        <a href="Aboutme.html">About</a> 
+        </nav>
+      </h1>
+      <h2> Ayah Imad  <p><br> WEB & MOBILE DEVELOPER </p></h2>
+    </article>
+        <article class="feel">
+          <p>MAKE YOUR SELF COMFORTABLE , HAVE A SEAT AND JUST WATCH</p>
+        </article>
+     
+     
+     </div>
+  
+    
+
+</body>
+</html>
+
+
+
+
+
+

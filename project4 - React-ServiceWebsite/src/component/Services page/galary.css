@@ -1,0 +1,248 @@
+.mainCard {
+    height: 35vh;
+    width: 53vw;
+    background: white;
+    box-shadow: 5px 10px 18px #666666;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+/* 
+.mainCard:hover {
+    transform: scale(1.05);
+} */
+
+.imgCard img {
+    position: relative;
+    left: 18vw;
+    top: 6vh;
+}
+
+.CardContent p {
+    width: 60vh;
+    position: relative;
+    left: 2.5vw;
+    bottom: 14.25vh;
+    text-align: center;
+
+}
+
+.somthing {
+    margin-top: .2rem;
+}
+
+.CardContent button {
+
+    position: relative;
+    left: -9.5vw;
+    bottom: 15vh;
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    font-size: 1rem !important;
+    width: 7rem;
+    height: 2rem;
+    /* justify-content: ; */
+    align-items: center;
+    /* margin-top: 11rem; */
+
+    background-color: #C7B7AA;
+    /* padding: 0.75rem .5rem; */
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 18px lightgray;
+
+
+
+}
+
+.CardContent button:hover {
+    background-color: transparent;
+    color: #C7B7AA;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+
+    .mainCard {
+        height: 23vh;
+        width: 73vw;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    .imgCard img {
+        position: relative;
+        left: 22vw;
+        top: 4vh;
+    }
+
+    .CardContent p {
+        width: 28vh;
+        position: relative;
+        left: 2vw;
+        bottom: 9vh;
+        font-size: .75rem;
+
+    }
+
+    .CardContent button {
+
+        bottom: 9vh;
+        left: -15vw;
+    }
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
+    .mainCard {
+
+        margin: auto;
+        margin-top: 2rem;
+        height: 20vh;
+        width: 70vw;
+
+    }
+
+    .imgCard img {
+        position: relative;
+        left: 22vw;
+        top: 4.75vh;
+    }
+
+
+    .CardContent p {
+
+        bottom: 6.5vh;
+        font-size: 1rem;
+        width: 40vw;
+
+    }
+
+    .CardContent button {
+        left: -12vw;
+        bottom: 7vh;
+    }
+}
+
+
+
+@media only screen and (min-device-width : 411px) and (max-device-width : 767px) {
+    .mainCard {
+
+        height: 53vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    .imgCard img {
+        padding-top: .5rem;
+        padding-left: .5rem;
+        position: relative;
+        left: -1vw;
+        top: 3.5vh;
+    }
+
+    .CardContent p {
+
+        padding-left: 1.25rem;
+        top: 5vh;
+        font-size: 1rem;
+        width: 13rem;
+        font-size: .75rem;
+        text-align: center;
+
+    }
+
+    .CardContent button {
+
+        top: 4vh;
+        left: 0vw;
+        width: 6rem;
+        height: 2rem;
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 410px) {
+    .mainCard {
+
+        height: 58vh;
+        width: 68vw;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    .imgCard img {
+        position: relative;
+        left: -.75vw;
+        top: 5vh;
+    }
+
+    .CardContent p {
+
+
+        /* padding-top: .1rem; */
+        padding: auto;
+        padding-left: .3rem;
+        top: 6vh;
+        font-size: 1rem;
+        width: 14.5rem;
+        font-size: .75rem;
+
+    }
+
+    .CardContent button {
+
+        top: 5.5vh;
+        left: 1vw;
+        width: 6rem;
+        height: 2rem;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .mainCard {
+
+        height: 68vh;
+        width: 75vw;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+
+    .imgCard img {
+        position: relative;
+        left: 0vw;
+        top: 5vh;
+    }
+
+    .CardContent p {
+
+
+        padding-top: .1rem;
+        padding-left: .2rem;
+        top: 8vh;
+        font-size: 1rem;
+        width: 14.5rem;
+        font-size: .75rem;
+
+    }
+
+    .CardContent button {
+
+        top: 6.5vh;
+        left: 2.5vw;
+        width: 6rem;
+        height: 2rem;
+        font-size: .65rem;
+    }
+
+}

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Righteous", cursive;
+}
+html {
+	background: url(../HomePage/Images/background.png) fixed;
+	background-repeat: repeat;
+}
+/* grid */
+.item1 {
+	grid-area: header;
+}
+.item2 {
+	grid-area: calculator;
+}
+.item3 {
+	grid-area: footer;
+}
+
+#mainNav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 16px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #f6f5f5;
+	transition: background 0.4s;
+	z-index: 3;
+}
+.user_Data {
+	padding: 1rem;
+	border-right: 1px #333 solid;
+	margin: 0.5rem 0.5rem;
+}
+#mainNav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	align-items: center;
+	width: 400px;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 1vmax;
+}
+.logout {
+	background-color: #ee6f57;
+	padding: 0.5rem;
+	border-radius: 10px;
+}
+
+#mainNav ul li a {
+	text-decoration: none;
+	color: #070d59;
+	font-weight: 500;
+	transition: color 0.3s;
+	padding: 0.5rem;
+}
+
+#mainNav ul li a:hover:not(.logout) {
+	background: #1f3c88;
+	color: #eee;
+	border-radius: 10px;
+}
+.bg-black {
+	background: #070d59 !important;
+}
+.text-white ul li a {
+	color: #f6f5f5 !important;
+}
+.text-white {
+	color: #f6f5f5 !important;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		"header header header header header header"
+		"calculator calculator calculator calculator calculator calculator"
+		"footer footer footer footer footer footer";
+	/* grid-gap: 10px ; */
+	/* padding: 1rem; */
+}
+
+*/ body {
+	overflow-x: hidden;
+	/* that was test just to change calculator background */
+	/* background-image: url(calcimg.jpg); */
+	/* background-color: red; */
+}
+#container {
+	width: 20rem;
+	height: 35rem;
+	/* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg); */
+	margin: 9rem auto;
+	font-family: "Righteous", cursive;
+}
+#calculator {
+	width: 20rem;
+	height: 32.5rem;
+	background-color: #f6f5f5;
+	margin: 0 auto;
+	top: 2rem;
+	position: relative;
+	border-radius: 2rem 4.5rem 2rem;
+	box-shadow: 0 0.5rem 0.7rem 0.5rem #ee6f57;
+}
+#result {
+	height: 7.5rem;
+}
+#history {
+	text-align: right;
+	height: 2rem;
+	margin: 0 2rem;
+	padding-top: 1.2rem;
+	font-size: 1rem;
+	color: #070d59;
+}
+#output {
+	text-align: right;
+	height: 3rem;
+	margin: 0.5rem 1rem;
+	font-size: 1.5rem;
+}
+#keyboard {
+	height: 25rem;
+}
+.operator,
+.number,
+.empty {
+	width: 3.1rem;
+	height: 3rem;
+	margin: 0.7rem;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.number {
+	background-color: #ffe2e2;
+}
+.empty {
+	background-color: #f6f5f5;
+}
+.number,
+.operator {
+	cursor: pointer;
+}
+.operator:active,
+.number:active {
+	font-size: 0.8rem;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+	outline: 0;
+}
+/* buttons for +-*/
+= */ button:nth-child(4) {
+	font-size: 1.25rem;
+	background-color: blue;
+}
+button:nth-child(8) {
+	font-size: 1.25rem;
+	background-color: #f77700;
+}
+button:nth-child(12) {
+	font-size: 1.25rem;
+	background-color: teal;
+}
+button:nth-child(16) {
+	font-size: 1.25rem;
+	background-color: rosybrown;
+}
+button:nth-child(20) {
+	font-size: 1.25rem;
+	background-color: darkmagenta;
+}
+/* footer css */
+footer {
+	border-width: 0.5rem;
+	border-color: #ffc7c7;
+	border-style: groove;
+	background-color: #ffe2e2;
+	color: #f6f5f;
+	box-shadow: #c7b198 0.5rem 0.6rem 2rem;
+	height: 100%;
+	width: 100%;
+	margin-top: 11rem;
+}
+/* .Emailfo */

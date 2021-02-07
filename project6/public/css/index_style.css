@@ -1,0 +1,43 @@
+.cat-sec {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.cat_img {
+    height: 320px;
+}
+img.card-img {
+    height: 250px; 
+    width: 270px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#sale_section > .sale-tag{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #384aec;
+    z-index: 2;
+}
+.owl-nav{
+    background-color: red !important;
+    display: block !important;
+}
+
+.my-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .my-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

@@ -1,0 +1,32 @@
+/* Navigation bar style */
+.navbar {
+    background-color: #bdaa9b !important;
+    box-shadow: 3px 3px 18px #333;
+    /* #b39d8b */
+    /* #bdaa9b */
+}
+
+.nav-item {
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: #f1edea !important;
+    margin-right: .35rem;
+}
+
+.nav-link:hover {
+    transform: scale(1);
+    transition: all;
+    color: white !important;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+    margin-right: 3rem !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}

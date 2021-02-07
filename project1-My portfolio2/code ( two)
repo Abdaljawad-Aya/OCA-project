@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="archive.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Archive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <style>
+
+body{
+
+margin: 0;
+padding: 0;
+font-family: "Roboto", sans-serif;
+}
+
+header{
+position: fixed;
+background: #22242A;
+width: 100%;
+height: 70px ;
+
+}
+
+.left_area h3{
+color: #fff;
+text-align: justify;
+margin-left: 20px;
+text-transform: uppercase;
+font-size: 25px;
+font-weight: 900;
+}
+
+.left_area span{
+color: #1DC4E7;
+}
+
+/* .logout_btn{ 
+padding: 8px;
+background: #19B3D3;
+text-decoration: none;
+float: right;
+margin-top: -30px;
+margin-right: 40px;
+border-radius: 2px;
+font-size: 15px;
+font-weight: 600;
+color: #fff;
+transition: 0.5s; 
+} */
+
+
+.logout_btn:hover{
+background: #0D9DBB;
+
+} 
+
+.sidebar{
+
+background: #2F323A;
+margin-top: 70px;
+padding-top:30px;
+position: fixed;
+left: 0;
+width: 250px;
+height: 100%;
+transition: 0.5s;
+transition-property: left;
+
+}
+.sidebar.profile_image{
+width: 100px;
+height: 100px;
+border-radius: 100px;
+margin-bottom: 10px;
+}
+
+.sidebar h4{
+color: #ccc;
+margin-top: 0;
+margin-bottom: 20px;
+
+}
+
+.sidebar a{
+
+color: #fff;
+display: block;
+width: 100%;
+line-height: 60px; 
+text-decoration: none!important;
+padding-left: 40px;
+box-sizing: border-box;
+transition: 0.5s;
+transition-property: background!important;
+}
+
+.sidebar a:hover{
+background: #19B3D3;
+}
+
+.sidebar i{
+padding-right: 10px;
+}
+
+label #sidebar_btn{
+
+Z-index: 1;
+color: #fff;
+position: fixed;
+cursor: pointer;
+left: 225px;
+font-size: 20px;
+margin: 5px 0px;
+transition: 0.5s;
+transition-property: color;
+}
+
+label #sidebar_btn:hover{
+color: #19B3D3;
+}
+#check:checked ~ .sidebar{
+left: -190px;
+
+}
+
+#check:checked ~ .sidebar a span{
+display: none;
+}
+
+#check:checked ~ .sidebar a{
+font-size: 20px;
+margin-left: 170px;
+width: 80px;
+}
+
+.content{
+margin-left:250px;
+background:url("/img/black-bricks.jpg");
+background-position: center;
+background-size: cover;
+height: 200vh;
+transition: 0.5s;
+}
+
+
+#check:checked ~ .content{
+margin-left:60px
+}
+#check{
+display: none;
+}
+
+h5{
+color: white;
+margin-top: 0;
+margin-bottom: 20px;
+margin-left: 20px;
+
+
+}
+/*Card Bootstrap*/
+
+
+/* .card-columns {
+@include media-breakpoint-only(md) {
+  column-count: 4;
+}
+@include media-breakpoint-only(xl) {
+  column-count: 15;
+}
+} */
+
+
+.container{
+   
+  margin-top: 100px;
+  padding: 0;
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  /* align-items:  ; */
+  align-content: center ;
+  /* justify-content: center; */
+  /* text-align: ; */
+ 
+
+  
+}
+.shadow{
+  top: 100px;
+  margin: 15px;
+  flex-direction: column-reverse;
+/* direction: rtl; */
+  direction: ltr;
+  height: 235px;
+  
+}
+
+.inner{
+  overflow: hidden;
+}
+
+.inner img{
+  transition: all 1.5s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.5);
+}
+  </style>
+</head>
+<body>
+
+  <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/8r43jzCzCDc?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <!-- <embed src="/music/melodyloops-preview-journey-on-2m30s.mp3" autostart=true loop=true hidden=true> -->
+    
+    
+    
+    <input type="checkbox" id="check" hidden>
+    
+    <!--header area start-->
+    
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>Port<span>Folio</span></h3>
+      </div>
+      <div class="right_area">
+        <!-- <a href="#"class="logout_btn"></a> -->
+      </div>
+    </header>
+    <!--header area end-->
+    <!--Sidebar start-->
+    
+    <div class="sidebar">
+      <center>
+        <img src="/img/hiclipart.com.png" width="80px" class="profile_image" alt="">
+        <h4>Ayah Imad</h4>
+      </center>
+      
+      <a href="project.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="archive.html"><i class="fas fa-archive"></i><span>Archive</span></a>
+      <a href="Aboutme.html"><i class="fas fa-info-circle"></i><span>About</span></a>
+
+      <br> <br>
+      <h5>Social Media</h5>
+      <a href="https://github.com/Abdaljawad-Ayah/orange"><i class="fab fa-github-square"></i><span>Github</span></a>
+      <a href="https://www.linkedin.com/in/ayah-imad/"><i class="fab fa-linkedin"></i><span>linkedin</span></a>
+  
+    </div>
+    
+ 
+    <div class="content">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+              <div class="card shadow" style="width: 15rem;">
+                  <div class="inner">
+                      <img class="card-img-top" src="/img/img2.png" alt="Card image cap">
+                  </div>
+               
+                </div>
+          </div> 
+          <div class="col-md-4">
+              <div class="card shadow" style="width: 15rem;">
+                  <div class="inner">
+                          <img class="card-img-top" src="/img/img7.png" alt="Card image cap">
+                  </div>
+                  
+               
+                </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow" style="width: 15rem;">
+                  <div class="inner">
+                          <img class="card-img-top" src="/img/img3.png" alt="Card image cap">
+                  </div>
+                  
+                  <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                    
+                    </p>
+                   
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  

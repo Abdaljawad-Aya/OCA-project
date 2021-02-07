@@ -1,0 +1,95 @@
+.R-menu-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1.65rem;
+}
+
+.R-menu-Form {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+    align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50rem;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.R-menu-Container-card {
+  height: 39rem !important;
+  font-size: 1.15rem;
+}
+.m_card_m {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.m_card {
+  width: 100%;
+  height: auto;
+}
+.testtt {
+  display: flex;
+  width: 25rem;
+  margin: 2.5rem 1rem;
+  /* padding: 1rem; */
+}
+
+.R-menu-Container-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -2rem;
+  margin: 0 auto;
+}
+.R-number {
+  width: 10rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 4rem; */
+}
+.R-menu-images {
+  height: 22rem !important;
+  object-fit: cover;
+}
+
+.R-btn2 {
+  margin-top: -3rem;
+  /* transform: translateY(-10rem); */
+}
+
+.R-menu-Container-body {
+  width: 8rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerContainer {
+  /* margin-left: 9rem; */
+  /* padding-left: 9rem;
+ padding-bottom: 2rem; */
+
+  margin: 0 auto;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.w-description-text {
+  height: 6rem;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+/* 
+.R-menu-Container-text {
+  height: 5rem;
+} */

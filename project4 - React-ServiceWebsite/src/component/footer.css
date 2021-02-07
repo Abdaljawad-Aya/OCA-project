@@ -1,0 +1,89 @@
+/* Tags Styles */
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Footer section style */
+.footer {
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px black;
+  background-image: url('./images/footer_background2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* background-color: white; */
+  /* opacity: 0.3; */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer_content div {
+  margin-bottom: 1.5rem;
+}
+
+.footer_qoute {
+  font-size: 3.5rem;
+  /* font-family: 'Lobster', cursive; */
+  font-family: "Dancing Script", cursive;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Sacramento', cursive !important; */
+}
+
+.footer_social_icons i {
+  margin-right: 1rem;
+  border: solid 3px white;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.footer_social_icons i:hover {
+  background-color:#C7B7AA ;
+}
+
+.fa-facebook-f {
+  padding: 1rem 1.2rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin-top: 15rem;
+  }
+
+  .footer_content {
+    padding: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 3rem;
+  }
+
+  .footer_content {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
