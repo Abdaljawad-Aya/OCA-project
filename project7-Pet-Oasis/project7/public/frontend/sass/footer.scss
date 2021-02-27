@@ -1,0 +1,184 @@
+.footer{
+
+	background-color: $footer-bg;
+	color: $footer-font-color;
+    background-size: cover;
+    background-position: center;
+
+	
+	.footer-item{
+		.logo-bottom{
+			margin-bottom: 10px;
+		}
+		.footer-title{
+			font-size: 24px;
+			/*font-weight: 700;*/
+			padding: 20px 0 30px 0;
+			margin-bottom: 0;
+			position: relative;
+			color: $color-primary;
+			font-family: $font-heading;
+			
+		}
+		.footer-sosmed{
+			margin-top: 50px;
+			margin-bottom: 30px;
+			display: inline-block;
+			a{
+				.item{
+					color: $white;
+					display: table-cell;
+ 					vertical-align: middle;
+					margin: 0 14px;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					background-color: lighten($color_secondary, 5%);
+					@include border-radius(50px);
+					&:hover{
+						background-color: $color_primary;
+					}
+					.fa{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		// list info
+
+		.list{
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style: none;
+			    padding-bottom: 10px;
+    			padding-top: 10px;
+    			&:first-child{
+    				padding-top: 0;
+    			}
+				
+				a{
+					position: relative;
+					color: $footer-font-color;
+					&:hover{
+						color: $color_primary;
+					}
+				}
+			}
+		}
+
+		.footer-subscribe{
+	      position: relative;
+	      input[type=email]{
+	        width: 100%;
+	        background: #fff;
+	        padding: 10px 57px 10px 17px;
+	        min-height: 38px;
+	        max-width: 480px;
+	        @include border-radius(0);
+            border: 0;
+	        &:focus{
+	          background: #fff;
+	          @include border-radius(2px);
+	          -webkit-box-shadow: 0 0 0 2px $color_primary;
+	          -moz-box-shadow: 0 0 0 2px $color_primary;
+	          box-shadow: 0 0 0 2px $color_primary;
+	          border-color: transparent;
+	        }
+	      }
+	      input[type=submit]{
+	        position: absolute;
+	        left: 0;
+	        top: 0;
+	        visibility: hidden;
+	      }
+	      label{
+	        position: absolute;
+	        right: 0;
+	        top: 0;
+	        border: 0;
+	        width: 40px;
+	        height: 38px;
+	        line-height: 40px;
+	        padding: 0;
+	        cursor: pointer; 
+	        text-align: center;
+	        font-size: 13px;
+	        background: none;
+	        color: $white;
+	        outline: 0 !important;
+	        -webkit-transition: color .3s ease;
+	        -moz-transition: color .3s ease;
+	        -ms-transition: color .3s ease;
+	        -o-transition: color .3s ease;
+	        transition: color .3s ease;
+	        background: $color_primary;
+	      }
+	      .icon{
+	        font-size: 18px;
+	      }
+	      p{
+	        font-size: 13px;
+	        margin-top: 16px;
+	      }
+	  	}
+
+	  	.recent-post{
+  			margin: 0;
+  			padding: 0;
+	  		li{
+	  			list-style: none;
+	  			margin: 0 0 30px;
+	  			a{
+	  			    color: $color-body;
+				    line-height: 20px;
+				    display: inline-block;
+				    vertical-align: top;
+			        margin: 0 0 14px;
+			        &:hover{
+			        	color: $color_primary;
+			        }
+				}
+				.date{
+				    display: block;
+				    font-size: 12px;
+				    padding: 0;
+				    color: rgba($color-body, .4);
+				    i{
+				    	margin-right: 5px;
+				    }
+				}
+	  		}
+	  	}
+
+	}
+
+	.fcopy {
+	    padding: 25px 0 10px 0;
+	    font-size: 14px;
+	    border-top: 1px solid lighten($footer-bg, 10%);
+	    background-color: $footer-bg;
+	}
+
+}
+
+.list-info{
+	margin: 0;
+	padding: 0;
+	li{
+		margin-bottom: 20px;
+		list-style: none;
+	    font-size: 16px;
+		.info-icon {
+		    display: table-cell;
+		}
+		.info-text{
+			/*margin-left: 30px;*/
+			padding-left: 10px;
+			display: table-cell;
+			vertical-align: top;
+		}
+	}
+}

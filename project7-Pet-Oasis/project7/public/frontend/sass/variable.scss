@@ -1,0 +1,65 @@
+$font-primary : 'arvo', serif;
+$font-secondary : 'Bitter', serif;
+$font-tertiary : '', sans-serif;
+$font-heading : $font-secondary;
+$font-icon: FontAwesome;
+$font-sas: 'sas-webfont';
+
+
+$black: #222222;
+$white: #ffffff;
+
+// Global
+$color-body: #999999;
+$color-primary: #F7941D;
+$color-secondary: #3C2800;
+$color-tertiary: #000000;
+$color-quaternary: #ffffff;
+
+
+/* -------------------- 
+TOPBAR SETTING
+-----------------------*/
+$topbar-bg: $color_secondary;
+$topbar-color: $white;
+$topbar-nav-color: $white;
+$topbar-nav-hover-color: $color-primary;
+$topbar-font: $font-secondary;
+
+/* -------------------- 
+NAVBAR SETTING
+-----------------------*/
+$navbar-bg: $color-primary;
+$navbar-font: $font-secondary;
+$navbar-color: $color-secondary;
+$navbar-hover-color: $white;
+$navbar-active-color: $white;
+$navbar-stiky-color: $color-secondary;
+
+/* -------------------- 
+FOOTER SETTING
+-----------------------*/
+$footer-bg: #000;
+$footer-font-color: $white;
+
+/* -------------------- 
+BUTTON SETTING
+-----------------------*/
+$btn-primary-hover: lighten($color-secondary, 20%);
+
+
+// Background
+$bg__topbar: $color-primary;
+
+.bolder{
+	font-weight: 600;
+}
+
+.cfix{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+@import "mixin.scss";
