@@ -1,0 +1,65 @@
+{% extends "Layout.html" %}
+{% block content %}
+<div class="container-fluid">
+    <h1 class="mt-4">Dashboard</h1>
+    <div class="row">
+        <div class="col mb-4">
+            <form method="post" action="{% url "addSource" %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter name">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        {% for source in sources %}
+                        <tr>
+                            <td>{{ source.id }}</td>
+                            <td>{{ source.name }}</td>
+
+                            <td>
+                                <a class="btn btn-warning" href="{% url 'editSource' id=source.id %}">Edit</a>
+
+                            </td>
+                            <td>
+                                <a class=" btn btn-danger" href="{% url 'deleteSource' id=source.id %}">Delete</a>
+
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

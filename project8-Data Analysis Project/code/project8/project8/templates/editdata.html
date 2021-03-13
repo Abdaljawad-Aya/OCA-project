@@ -1,0 +1,43 @@
+{% extends "Layout.html" %}
+{% block content %}
+<div class="container-fluid">
+    <h1 class="mt-4">Dashboard</h1>
+    <div class="row">
+        <div class="col mb-4">
+            <form method="post" action="{% url "update" %}">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{ data.id }}">
+                <div class="form-group">
+                    <label>Member Id</label>
+                    <input type="text" name="Member_ID" class="form-control" placeholder="Enter name"
+                        value="{{ data.Member_ID }}">
+                </div>
+                <div class="form-group">
+                    <label>Result_Name</label>
+                    <input type="text" name="Result_Name" class="form-control" placeholder="Enter name"
+                        value="{{ data.Result_Name }}">
+                </div>
+                <div class="form-group">
+                    <label>Result_Description</label>
+                    <input type="text" name="Result_Description" class="form-control" placeholder="Enter name"
+                        value="{{ data.Result_Description }}">
+                </div>
+
+                <div class="form-group">
+                    <label>Numeric_Result</label>
+                    <input type="text" name="Numeric_Result" class="form-control" placeholder="Enter Numeric_Result"
+                        value="{{ data.Numeric_Result }}">
+                </div>
+
+                <div class="form-group">
+                    <label>Patient_Gender</label>
+                    <input type="text" name="Patient_Gender" class="form-control" placeholder="Enter name"
+                        value="{{ data.Patient_Gender }}">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

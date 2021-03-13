@@ -1,0 +1,61 @@
+{% extends "Layout.html" %}
+
+{% block content %}
+<div id="cors">
+    {% csrf_token %}
+
+</div>
+<div class="container-fluid">
+    <h1 class="mt-4">{{datasource.name}}</h1>
+    <div class="row">
+        <div class="col mb-4">
+
+            <div class="form-group">
+
+                <select onchange="getApi({{datasource.id}})" id="testname" class="form-control"
+                    id="exampleFormControlSelect1">
+                    <option hidden selected disabled>Select Test Name ...</option>
+                    {% for data in testname %}
+                    <option value="{{data.id}}">{{data.Name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Data Set
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+
+
+                        <tr>
+                            <th>Data_Source</th>
+                            <th>Member_ID</th>
+                            <th>Result_Name</th>
+                            <th>Result_Description</th>
+                            <th>Numeric_Result</th>
+                            <th>Patient_DOB</th>
+                            <th>Patient_Gender</th>
+                            <th>Action</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody id="table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

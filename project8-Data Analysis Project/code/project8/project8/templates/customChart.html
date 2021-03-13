@@ -1,0 +1,57 @@
+{% extends "Layout.html" %}
+
+{% block content %}
+<div id="cors">
+    {% csrf_token %}
+
+</div>
+<div class="container-fluid">
+    <h1 class="mt-4">{{datasource.name}}</h1>
+    <div class="row">
+        <div class="col mb-4">
+           
+                <div class="form-group">
+                     <label for="exampleFormControlSelect1">Test Name</label>
+                    <select onchange="customgetApi({{datasource.id}})" id="customtestname" class="form-control" id="exampleFormControlSelect1">
+                    <option   hidden selected disabled>Select Test Name ...</option>
+                    {% for data in testname %}
+                    <option value="{{data.id}}" >{{data.Name}}</option>
+                    {% endfor %}
+                    </select>
+                </div>
+              
+           
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar mr-1"></i>
+                        Bar Chart Example
+                    </div>
+                    <div class="card-body"><canvas id="customtestsChart" width="100%" height="50"></canvas></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-pie mr-1"></i>
+                    Pie Chart Example
+                </div>
+                <div class="card-body"><canvas id="customtestsChartpi" width="100%" height="50"></canvas></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock content %}
